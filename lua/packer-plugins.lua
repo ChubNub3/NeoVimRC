@@ -28,7 +28,6 @@ return require('packer').startup(function()
 	use "preservim/nerdcommenter" --Comment multiple lines at once
 	use "andweeb/presence.nvim"
 
-	use {'neoclide/coc.nvim', branch = 'release'} --Auto-Complete
 
 	use {
 		'nvim-lualine/lualine.nvim', --Lua line
@@ -59,5 +58,15 @@ return require('packer').startup(function()
 		'TimUntersberger/neogit', 
 		requires = 'nvim-lua/plenary.nvim' 
 	}
+
+	use {
+		'hrsh7th/nvim-cmp',
+		'hrsh7th/cmp-buffer', 
+		'hrsh7th/cmp-nvim-lsp'
+	}
+
+
+
+
 	
 end)
