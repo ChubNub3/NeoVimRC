@@ -24,6 +24,7 @@ require('lualine').setup()
 
 require("nvim-tree").setup()
 require("startup").setup({theme = "dashboard"})
+
 require("indent_blankline").setup {
   show_current_context = true,
 	show_current_context_start = true,
@@ -72,5 +73,8 @@ keymap('n', '<leader>c', ':!gcc % && ./a.out<CR>', opts) -- Run a C file
 keymap('n', '<leader>b', ':!chmod +x ./% && ./% <CR>', opts) -- Run a Bash file
 keymap('n', '<leader>p', ' :w <CR> :!python3 % <CR>', opts) -- Run a python file
 keymap('n', '<leader>j', ':w <CR> :!javac % && java %:r <CR>', opts) -- Run a java file
+
+-- Neogit
+keymap('n', '<leader>g', ':Neogit <CR>', opts) 
 
 require('packer-plugins')
