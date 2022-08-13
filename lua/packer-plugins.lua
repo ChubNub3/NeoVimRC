@@ -47,24 +47,16 @@ return require('packer').startup(function()
 		end
 	}
 
-	use {
-		"dcampos/nvim-snippy"
-	}
-	use {
-		"honza/vim-snippets"
-	}
 
 	use { 
 		'TimUntersberger/neogit', 
 		requires = 'nvim-lua/plenary.nvim' 
 	}
 
-	use {
-		'hrsh7th/nvim-cmp',
-		'hrsh7th/cmp-buffer', 
-		'hrsh7th/cmp-nvim-lsp'
-	}
 
+	use "ycm-core/YouCompleteMe"
+	use "dcampos/nvim-snippy"
+	use "honza/vim-snippets"
 
 
 
